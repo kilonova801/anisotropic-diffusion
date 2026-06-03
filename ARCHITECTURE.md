@@ -89,4 +89,4 @@ script-to-experiment mapping for each is in `docs/cifar10-experiments.md` and
 `dnnlib/`, `torch_utils/`, `training/`, and the root scripts `train.py`, `generate.py`,
 `fid.py`, `dataset_tool.py` are taken from EDM and used for dataset preparation
 (`dataset_tool.py`), the network/preconditioning backbone (`training/networks.py`), and FID
-evaluation (`fid.py`). See `CODE_REVIEW.md` for known caveats and cleanup opportunities.
+evaluation (`fid.py`).

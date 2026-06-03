@@ -10,7 +10,6 @@ baseline across NFE budgets, with the largest gains at low NFE. Built on
 [NVLabs/EDM (Karras et al., 2022)](https://github.com/NVlabs/edm).
 
 For a map from paper sections/equations to code, see [`ARCHITECTURE.md`](ARCHITECTURE.md).
-For known issues and cleanup notes, see [`CODE_REVIEW.md`](CODE_REVIEW.md).
 
 ## Repository structure
 
