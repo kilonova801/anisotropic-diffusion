@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Datasets, checkpoints, generated outputs (large / not version-controlled)
+datasets/
+finetune/
+samples/
+results/
+checkpoints/
+*.pkl
+*.pt
+*.pth
+*.npz
+fid-tmp/
+*.npz.lock
+
+# Logs
+*.log
+training_options.json
+log.txt
+stats.jsonl
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

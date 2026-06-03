@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anidiff"
+version = "0.1.0"
+description = "Variational Trajectory Optimization of Anisotropic Diffusion Schedules"
+readme = "README.md"
+requires-python = ">=3.9"
+
+# Runtime dependencies are pinned in requirements.txt (they need the PyTorch CUDA
+# index, so they are installed separately rather than declared here):
+#   pip install -r requirements.txt
+
+# The core modules and the inherited EDM packages are kept at the repository root
+# ON PURPOSE: EDM's torch_utils.persistence pickles fully-qualified module paths
+# into checkpoints (and common_utils.GFn / HFn schedule objects are pickled too),
+# so renaming or relocating these would break loading of existing checkpoints.
+# Installing this project (`pip install -e .`) exposes them under their ORIGINAL
+# names from anywhere, so the relocated entry-point scripts in scripts/ can import
+# them without changing any import statements or pickled module paths.
+[tool.setuptools]
+py-modules = ["common_utils", "data_loader", "train", "generate", "fid", "dataset_tool"]
+packages = ["dnnlib", "torch_utils", "training"]
