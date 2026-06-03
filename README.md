@@ -100,9 +100,3 @@ sampling + FID end to end. The script-to-experiment mapping is in
 Builds on [NVLabs/EDM (Karras et al., 2022)](https://github.com/NVlabs/edm). The
 `torch_utils/`, `training/`, and `dnnlib/` packages and the `train.py`, `generate.py`,
 `fid.py`, `dataset_tool.py` scripts are inherited from EDM.
-
-## License
-
-EDM is released under **CC BY-NC-SA 4.0** (non-commercial, share-alike). As a derivative
-work, the inherited components remain subject to that license; add a top-level `LICENSE`
-reflecting the terms intended for the new code in this repository before public release.
